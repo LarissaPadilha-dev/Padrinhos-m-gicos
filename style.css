@@ -15,8 +15,39 @@ header {
   justify-content: space-between;
   padding-left: 20px;
 }
+@media (max-width: 1058px) {
+  header {
+    flex-direction: column;
+    height: 20vh;
+  }
+}
+@media (max-width: 770px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 header img {
   width: 29vh;
+}
+@media (max-width: 1058px) {
+  header img {
+    width: 20vh;
+  }
+}
+@media (max-width: 770px) {
+  header img {
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 162px) {
+  header img {
+    width: 20vh;
+  }
 }
 header div {
   width: 30vw;
@@ -33,6 +64,27 @@ header div .FirstButton {
   border-radius: 10px;
   font-size: 20px;
 }
+@media (max-width: 1058px) {
+  header div .FirstButton {
+    height: 5.3vh;
+    width: 10vw;
+    font-size: 1.7vw;
+  }
+}
+@media (max-width: 770px) {
+  header div .FirstButton {
+    height: 4vh;
+    width: 12vw;
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 500px) {
+  header div .FirstButton {
+    height: 5vh;
+    width: 15vw;
+    font-size: 2.5vw;
+  }
+}
 header div .FirstButton:hover {
   background-color: #ffa600;
 }
@@ -43,6 +95,26 @@ header div button {
   border: solid 1px white;
   border-radius: 10px;
   font-size: 20px;
+}
+@media (max-width: 1058px) {
+  header div button {
+    height: 5vh;
+    width: 10vw;
+  }
+}
+@media (max-width: 770px) {
+  header div button {
+    height: 4vh;
+    width: 12vw;
+    font-size: 1.9vw;
+  }
+}
+@media (max-width: 500px) {
+  header div button {
+    height: 5vh;
+    width: 15vw;
+    font-size: 2.5vw;
+  }
 }
 header div button:hover {
   background-color: #ffa600;
